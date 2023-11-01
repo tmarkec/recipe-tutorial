@@ -1,0 +1,65 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap') */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+:root {
+    /** fonts*/
+    --title: 'EB Garamond', serif;
+    --main: 'Roboto', serif;
+    /** colors*/
+    --background: #3f006a0f;
+    --blue: #0d6efd;
+    --black: #000;
+    --off-white: #f6f6f6;
+    --orange: #ffbf50;
+
+    /** utils */
+    --smal-box: 1px -1px 7px #00000061;
+    --border: 1px solid #00000030;
+
+}
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
+main {
+    flex:1 0 auto;
+    background-color: var(--off-white);
+}
+/* Footer */
+footer {
+    flex-shrink: 0;
+    background-color: var(--off-white);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: var(--border);
+}
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
+}
+
+/* header*/
+
+.navbar {
+    background-color: var(--off-white);
+    box-shadow: var(--smal-box);
+}
+
+a.nav-link {
+    color: var(--black);
+}
+img.logo {
+    width: 18.75rem;
+}
